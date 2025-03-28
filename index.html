@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HungerGame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Styles remain the same as before (copied from original) */
+        /* General, Header, Footer, and other styles here... */
+
+        /* Adjustments for buttons */
+        .btn-outline-secondary {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #27EF9F;
+            color: #27EF9F;
+            font-weight: bold;
+            background: none;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #27EF9F;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HUNGERGAME</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="login-box">
+            <div class="login-key">
+                <i class="fa fa-key" aria-hidden="true"></i>
+            </div>
+            <div class="login-title">
+                <br> From People To People
+            </div>
+            <div class="login-form">
+                <form onsubmit="login(event)">
+                    <div class="form-group">
+                        <label class="form-control-label">EMAIL</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">PASSWORD</label>
+                        <input type="password" id="password" class="form-control" required>
+                    </div>
+                    <p id="error-message" class="error-text"></p>
+
+                    <!-- LOGIN BUTTON -->
+                    <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+                </form>
+
+                <!-- REGISTER BUTTON -->
+                <a href="register.html">
+                    <button type="button" class="btn btn-outline-secondary">REGISTER</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HungerGame. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

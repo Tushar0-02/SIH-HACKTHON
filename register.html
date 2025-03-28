@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - HungerGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HUNGERGAME REGISTER</h1>
+    </header>
+
+    <div class="container">
+        <div class="login-box">
+            <div class="login-key">
+                <i class="fa fa-user-plus"></i>
+            </div>
+            <div class="login-title">Create an Account</div>
+
+            <form id="register-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit" class="btn btn-outline-primary">REGISTER</button>
+            </form>
+
+            <p>Already have an account? <a href="index.html">Login Here</a></p>
+            <p id="register-error-message" class="error-text"></p>
+        </div>
+    </div>
+
+    <footer>&copy; 2025 HungerGame. All rights reserved.</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.6.1/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.6.1/firebase-auth.js"></script>
+    <script type="module" src="register.js"></script>
+</body>
+</html>

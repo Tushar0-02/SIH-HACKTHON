@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="https://aiassistantforhungergame.netlify.app/" target="_blank" style="
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+">
+    🤖 Access AI Assistant
+</a>
+
+    <div class="container">
+        <h2>Available Donations</h2>
+        <div id="donationList"></div>
+
+        <h2>Accepted Donations</h2>
+        <div id="acceptedDonations"></div>
+
+        <h2>Rejected Donations</h2>
+        <div id="rejectedDonations"></div>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="helper.js"></script>
+</body>
+</html>
