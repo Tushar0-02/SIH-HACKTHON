@@ -37,7 +37,7 @@ registerForm.addEventListener("submit", (event) => {
             console.log("User registered:", userCredential.user);
 
             // You can store additional info (e.g., username, phone) in your database if needed
-            window.location.href = "main.html";  // Redirect to another page after success
+            window.location.href = "index.html";  // Redirect to another page after success
         })
         .catch((error) => {
             console.error("Error Code:", error.code);
