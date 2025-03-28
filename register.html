@@ -4,7 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - HungerGame</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            overflow: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 0;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-key {
+            font-size: 40px;
+            color: #ff6f61;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .login-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border-color: #ff6f61;
+            outline: none;
+        }
+
+        .btn {
+            padding: 10px;
+            background-color: #ff6f61;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #e64a45;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff6f61;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        .error-text {
+            color: red;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            header {
+                font-size: 18px;
+            }
+            footer {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+                max-width: 300px;
+            }
+            .login-title {
+                font-size: 20px;
+            }
+            .btn {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,23 +153,21 @@
     </header>
 
     <div class="container">
-        <div class="login-box">
-            <div class="login-key">
-                <i class="fa fa-user-plus"></i>
-            </div>
-            <div class="login-title">Create an Account</div>
-
-            <form id="register-form">
-                <input type="text" id="username" placeholder="Username" required>
-                <input type="email" id="register-email" placeholder="Email" required>
-                <input type="tel" id="phone" placeholder="Phone Number" required>
-                <input type="password" id="register-password" placeholder="Password" required>
-                <button type="submit" class="btn btn-outline-primary">REGISTER</button>
-            </form>
-
-            <p>Already have an account? <a href="index.html">Login Here</a></p>
-            <p id="register-error-message" class="error-text"></p>
+        <div class="login-key">
+            <i class="fas fa-user-plus"></i>
         </div>
+        <div class="login-title">Create an Account</div>
+
+        <form id="register-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="submit" class="btn">REGISTER</button>
+        </form>
+
+        <p>Already have an account? <a href="index.html">Login Here</a></p>
+        <p id="register-error-message" class="error-text"></p>
     </div>
 
     <footer>&copy; 2025 HungerGame. All rights reserved.</footer>
